@@ -241,9 +241,9 @@ p{
     outline: none;
     background-color: transparent;
     
-   font-size: 45px;
+   font-size: 4vw;
     color: red;
-    padding-bottom: 10px;
+    padding-bottom: 1vw;
 
 }
 
@@ -253,5 +253,5 @@ p{
 
 #time p{
     position: absolute;
-    bottom: 15px;
+    bottom: 1vw;
 }
