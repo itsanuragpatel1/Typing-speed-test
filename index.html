@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="main">
+    <div id="upper">
+        <h1>TYPING SPEED TEST</h1>
+        <h2>Test your <span class="blue"> typing </span>skills</h2>
+        <div id="change">
+            <div id="time"><input id="chtime" class="numstyle" autocomplete="off"></input><p>seconds</p></div>
+            <div id="wordsp"><div  class="square"> <p id="words" class="numstyle">0</p></div><p>words/min</p></div>
+            <div id="charsp"><div  class="square"><p id="chars" class="numstyle">0</p></div><p>chars/min</p></div>
+            <div id="accp"><div  class="square"><p id="acc" class="numstyle">0</p></div><p>% accuracy</p></div>
+        </div>
+        <div id="bigblock">
+            <input type="text" id="userinput" autocomplete="off" autofocus>
+            <input type="text" id="systeminput" readonly>
+            <p id="lastword"></p>
+        </div>
+    </div>
+
+    <div id="result">
+        <h1>You're a Champion.</h1>
+        <div id="value">
+        <div><h2 id="cpm">000</h2><p>CPM</p></div>
+        <div><h2 id="wpm">00</h2><p>WPM</p></div>
+        <div><h2 id="accuracy">00%</h2><p>ACCURACY</p></div>
+        </div>
+        <button id="okay">Okay</button>
+    </div>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
