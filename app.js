@@ -1,10 +1,10 @@
 
-let wordsArray = [
-    "Dog", "Apple", "Train", "Light", "Chair", "River", "Mouse", "Cloud", "Tiger", "Snake",
-    "Lemon", "Music", "Table", "Queen", "Water", "Shell", "Dance", "Bridge", "House", "Guitar",
-    "Paper", "Radio", "Beach", "Hotel", "Puzzle", "Horse", "Ocean", "Rabbit", "Robot", "Mirror",
-    "Spoon", "Candle", "Flower", "Key", "Moon", "Cup", "Clock", "Cherry", "Book", "Chair", "Hat",
-    "Duck", "Eagle", "Fox", "Globe", "Jelly", "Kite", "Lemon", "Mango", "Nest"
+let wordsArray =[
+    "dog", "apple", "train", "light", "chair", "river", "mouse", "cloud", "tiger", "snake",
+    "lemon", "music", "table", "queen", "water", "shell", "dance", "bridge", "house", "guitar",
+    "paper", "radio", "beach", "hotel", "puzzle", "horse", "ocean", "rabbit", "robot", "mirror",
+    "spoon", "candle", "flower", "key", "moon", "cup", "clock", "cherry", "book", "chair", "hat",
+    "duck", "eagle", "fox", "globe", "jelly", "kite", "lemon", "mango", "nest"
 ];
 
 
