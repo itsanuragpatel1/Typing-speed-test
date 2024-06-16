@@ -1,5 +1,11 @@
 
-let wordsArray = ["apple", "breeze", "shadow", "castle", "forest", "garden", "heroic", "island", "journey", "knight", "lantern", "melody", "noble", "ocean", "palace", "quest", "rhythm", "sunset", "treasure", "unity", "valley", "whisper", "beacon", "daring", "ember", "fortune", "glisten", "haven", "xylophone", "zenith"];
+let wordsArray = [
+    "Dog", "Apple", "Train", "Light", "Chair", "River", "Mouse", "Cloud", "Tiger", "Snake",
+    "Lemon", "Music", "Table", "Queen", "Water", "Shell", "Dance", "Bridge", "House", "Guitar",
+    "Paper", "Radio", "Beach", "Hotel", "Puzzle", "Horse", "Ocean", "Rabbit", "Robot", "Mirror",
+    "Spoon", "Candle", "Flower", "Key", "Moon", "Cup", "Clock", "Cherry", "Book", "Chair", "Hat",
+    "Duck", "Eagle", "Fox", "Globe", "Jelly", "Kite", "Lemon", "Mango", "Nest"
+];
 
 
 let userinput=document.querySelector("#userinput");
@@ -50,8 +56,8 @@ function timer(){
 
 
 function result(){
-    document.querySelector("#wpm").textContent=words*(60/lasttime);
-    document.querySelector("#cpm").textContent=chars*(60/lasttime);
+    document.querySelector("#wpm").textContent=Math.floor(words*(60/lasttime));
+    document.querySelector("#cpm").textContent=Math.floor(chars*(60/lasttime));
     document.querySelector("#accuracy").textContent=`${Math.floor(accuracy)}%`;
     document.querySelector("#result").style.visibility="visible";
     document.querySelector("#upper").style.filter="blur(5px)";
@@ -96,7 +102,7 @@ function restart(){
 }
 
 function addword(){
-    let random = Math.floor(Math.random()*30);
+    let random = Math.floor(Math.random()*50);
     if(systeminput.value===""){
         systeminput.value=wordsArray[random];
     }else{systeminput.value=systeminput.value+" "+wordsArray[random];}
@@ -113,8 +119,8 @@ let wrongword=0;
 function update(){ 
     
     accuracy=(words/(words+wrongword))*100;
-    wordch.innerText=words*(60/lasttime);
-    charch.innerText=chars*(60/lasttime);
+    wordch.innerText=Math.floor(words*(60/lasttime));
+    charch.innerText=Math.floor(chars*(60/lasttime));
     accuracych.innerText=Math.floor(accuracy);
 }
 
