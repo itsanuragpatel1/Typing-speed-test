@@ -221,3 +221,12 @@ userinput.addEventListener("input",()=>{
 lastword.addEventListener("click",()=>{
     userinput.focus();
 })
+
+
+
+function moveCursorToEnd() {
+    let length = userinput.value.length;
+    userinput.setSelectionRange(length, length);
+}
+
+userinput.addEventListener('click', moveCursorToEnd);
